@@ -40,3 +40,8 @@ abra outro terminal na mesma pasta e execute:
 
     yarn start
   
+## Para executar os testes
+
+  abra um terminal na pasta do projeto e execute:
+  
+    yarn test

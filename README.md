@@ -31,8 +31,12 @@ Faza o clone do projeto.
   git clone https://github.com/romualdo-ah/rocketseat-carrinho-de-compras.git
 
 na pasta do projeto execute:
-  yarn
-  yarn server
+
+    yarn
+
+    yarn server
+
 abra outro terminal na mesma pasta e execute:
-  yarn start
+
+    yarn start
   

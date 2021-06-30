@@ -24,3 +24,15 @@ Foi criado um hook customizado que porta um Context para gestão de dados a trav
 - Icones de react-icons.
 - Persistencia dos dados no Browser com localStorage.
 - Error Messaging e notificações com react-toastify.
+
+## Execute no seu computador
+
+Faza o clone do projeto.
+  git clone https://github.com/romualdo-ah/rocketseat-carrinho-de-compras.git
+
+na pasta do projeto execute:
+  yarn
+  yarn server
+abra outro terminal na mesma pasta e execute:
+  yarn start
+  

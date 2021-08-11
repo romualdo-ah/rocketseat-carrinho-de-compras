@@ -8,6 +8,10 @@ Pagina Principal
 Modificando o Carrinho
 
 ![Modificando o carrinho](/public/screencapture-localhost-3000-cart-2021-06-30-15_06_36.png?raw=true)
+
+Versão responsive
+
+![Responsive](/public/responsive.png?raw=true)
 ## Nesta app
 
 Foi criado um hook customizado que porta um Context para gestão de dados a travez dos diferentes componentes da aplicação.

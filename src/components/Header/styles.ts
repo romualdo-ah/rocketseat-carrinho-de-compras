@@ -6,7 +6,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
-
+  flex-wrap: wrap;
   a {
     transition: opacity 0.2s;
 
@@ -14,10 +14,14 @@ export const Container = styled.header`
       opacity: 0.7;
     }
   }
+  img{
+    max-width: 100%;
+  }
 `;
 
 export const Cart = styled(Link)`
   display: flex;
+  margin-left: auto;
   align-items: center;
   text-decoration: none;
 

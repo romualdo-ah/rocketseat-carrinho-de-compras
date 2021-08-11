@@ -3,8 +3,8 @@ import { darken } from 'polished';
 
 export const ProductList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat( auto-fit, minmax(15rem, 1fr) );
+  grid-gap: 1.6rem;
   list-style: none;
 
   li {
@@ -63,6 +63,7 @@ export const ProductList = styled.ul`
         flex: 1;
         text-align: center;
         font-weight: bold;
+        padding:10px;
       }
     }
   }

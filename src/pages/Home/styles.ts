@@ -17,6 +17,7 @@ export const ProductList = styled.ul`
     img {
       align-self: center;
       max-width: 250px;
+      transition:opacity 0.2s linear;
     }
 
     > strong {

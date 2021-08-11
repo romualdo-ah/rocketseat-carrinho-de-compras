@@ -37,8 +37,7 @@ export const Container = styled.div`
 `;
 
 export const ProductTable = styled.table`
-  width: 100%;
-
+  width:100%;
   thead th {
     color: #999;
     text-align: left;
@@ -59,7 +58,11 @@ export const ProductTable = styled.table`
     .control {
       display: flex;
       justify-content: space-between;
-      padding: 20px auto;
+      padding: 20px 0;
+      
+      button:last-child {
+        padding-right:0px;
+      }
     }
   }
 
@@ -93,7 +96,6 @@ export const ProductTable = styled.table`
   div {
     display: flex;
     align-items: center;
-    padding-top: 6px;
 
     input {
       border: 1px solid #ddd;

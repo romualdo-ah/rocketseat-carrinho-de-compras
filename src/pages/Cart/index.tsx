@@ -57,8 +57,8 @@ const Cart = (): JSX.Element => {
         <tbody>
           {cartFormatted.map((product) => (
             <tr key={product.id} data-testid="product">
-              <td style={{flexDirection:"column"}}>
-                <img src={product.image} alt={product.title} />
+              <td style={{ flexDirection: "column" }}>
+                <img loading="lazy" src={product.image} alt={product.title} />
                 <span>{product.priceFormatted}</span>
               </td>
 

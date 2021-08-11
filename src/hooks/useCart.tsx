@@ -42,15 +42,15 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
           productId,
           amount: cart_product.amount + 1,
         });
-        return
+        return;
       }
 
       const newCart = [...cart, { ...product_from_api, amount: 1 }];
-      localStorage.setItem('@RocketShoes:cart', JSON.stringify(newCart));
+      localStorage.setItem("@RocketShoes:cart", JSON.stringify(newCart));
       setCart(newCart);
     } catch {
-      toast.error('Erro na adição do produto');
-      toast.error('Quantidade solicitada fora de estoque');
+      toast.error("Erro na adição do produto");
+      toast.error("Quantidade solicitada fora de estoque");
     }
   };
 
@@ -88,7 +88,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       setCart(newCart);
       localStorage.setItem("@RocketShoes:cart", JSON.stringify(newCart));
     } catch {
-      toast.error('Erro na alteração de quantidade do produto');
+      toast.error("Erro na alteração de quantidade do produto");
     }
   };
 

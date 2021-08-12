@@ -48,10 +48,10 @@ const Cart = (): JSX.Element => {
       <ProductTable>
         <thead>
           <tr>
-            <th aria-label="product image">PRODUTO</th>
+            {/* <th aria-label="product image">PRODUTO</th> */}
             {/* <th>PRODUTO</th>
             <th>QTD</th> */}
-            <th>SUBTOTAL</th>
+            {/* <th>SUBTOTAL</th> */}
           </tr>
         </thead>
         <tbody>

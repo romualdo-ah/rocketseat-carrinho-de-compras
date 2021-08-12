@@ -7,6 +7,12 @@ export const Container = styled.div`
   border-radius: 4px;
 
   footer {
+    padding: 10px;
+    background:#fff;
+    border-radius: 6px;
+
+    position:sticky;
+    bottom:0;
     margin: 30px auto auto auto;
     display: flex;
     align-items: center;
@@ -59,7 +65,8 @@ export const ProductTable = styled.table`
       display: flex;
       justify-content: space-between;
       padding: 20px 0;
-      
+      /* padding-top:50px; */
+
       button:last-child {
         padding-right:0px;
       }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MdShoppingBasket } from 'react-icons/md';
+import { MdShoppingBasket,MdShoppingCart } from 'react-icons/md';
 
 import logo from '../../assets/images/logo.svg';
 import { Container, Cart } from './styles';
@@ -17,12 +17,16 @@ const Header = (): JSX.Element => {
 
       <Cart to="/cart">
         <div>
-          <strong>Meu carrinho</strong>
-          <span data-testid="cart-size">
-            {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`}
-          </span>
+          <strong>Carrinho</strong>
         </div>
-        <MdShoppingBasket size={36} color="#FFF" />
+          <div className="cart">
+          <span data-testid="cart-size">
+            
+            {cartSize}
+            {/* {`${cartSize} item${cartSize === 1 ? '' : 's'}`} */}
+          </span>
+        <MdShoppingCart size={36} color="#FFF" />
+          </div>
       </Cart>
     </Container>
   );

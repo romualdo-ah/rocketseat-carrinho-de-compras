@@ -60,11 +60,16 @@ export const ProductTable = styled.table`
     padding: 12px;
     border-bottom: 1px solid #eee;
     padding-bottom:50px;
-    
+    span{
+      color:#9c9c9c;
+      padding-top:5px;
+    }
+
     .control {
       display: flex;
       justify-content: space-between;
-      padding: 20px 0;
+      padding: 0;
+
       /* padding-top:50px; */
 
       button:last-child {

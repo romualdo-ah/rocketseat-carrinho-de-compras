@@ -59,13 +59,14 @@ const Cart = (): JSX.Element => {
             <tr key={product.id} data-testid="product">
               <td style={{ flexDirection: "column" }}>
                 <img loading="lazy" src={product.image} alt={product.title} />
-                <span>{product.priceFormatted}</span>
+                
               </td>
 
               <td>
                 <strong>{product.title}</strong>
+                <span>{product.priceFormatted}</span>
                 <div className="control">
-                  <div>
+                <div>
                     <button
                       type="button"
                       data-testid="decrement-product"
@@ -88,6 +89,7 @@ const Cart = (): JSX.Element => {
                       <MdAddCircleOutline size={20} />
                     </button>
                   </div>
+                <strong>{formatPrice(product.price * product.amount)}</strong>
                   <button
                     type="button"
                     data-testid="remove-product"
@@ -97,7 +99,6 @@ const Cart = (): JSX.Element => {
                   </button>
                 </div>
 
-                <strong>{formatPrice(product.price * product.amount)}</strong>
               </td>
             </tr>
           ))}

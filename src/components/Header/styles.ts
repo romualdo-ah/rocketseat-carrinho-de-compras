@@ -5,23 +5,21 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+
   position: sticky;
   padding: 10px;
   top: 0;
-  /* background: #151319; */
-  background: transparent;
-z-index: 1;
+  background: #151319;
+  z-index: 1;
   a {
     transition: opacity 0.2s;
     display: flex;
     align-items: center;
     flex-direction: row;
 
-    .cart{
-      
-      width:0;
-      padding-right:18px;
+    .cart {
+      width: 0;
+      padding-right: 18px;
       span {
         font-size: 12px;
         color: #fff;

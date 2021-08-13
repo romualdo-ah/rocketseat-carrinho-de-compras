@@ -29,4 +29,10 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  @media (max-width:470px){
+    header strong {
+    display:none !important;
+    }
+  }
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { darken, lighten } from "polished";
 
 export const Container = styled.div`
-  padding: 30px;
+  padding: 15px;
   background: #fff;
   border-radius: 4px;
 
@@ -54,12 +54,31 @@ export const ProductTable = styled.table`
 
   tbody tr{
     padding-bottom:12px;
+    display:flex;
+    flex-direction: column;
+  }
+  tbody td:first-child {
+    padding: 0;
+    display: flex;
   }
 
+  tbody td:first-child div{
+    display:block;
+    flex-direction:column;
+    margin-left:10px;
+  }
+
+
   tbody td {
+    flex-direction:row;
     padding: 12px;
     border-bottom: 1px solid #eee;
     padding-bottom:50px;
+   
+   &:nth-child(2){
+     padding-left:0px;
+   }
+
     span{
       color:#9c9c9c;
       padding-top:5px;
@@ -67,23 +86,27 @@ export const ProductTable = styled.table`
 
     .control {
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      width:100%;
       padding: 0;
 
-      /* padding-top:50px; */
-
-      button:last-child {
-        padding-right:0px;
+      strong{
+        margin-right:10px;
       }
+
+      button {
+        padding-top: 10px;
+        &:last-child {
+          padding-right:0px;
+        }
+      }
+
+
     }
   }
 
-  tbody td:first-child {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  
 
   img {
     max-height: 100px;
@@ -114,7 +137,7 @@ export const ProductTable = styled.table`
       border-radius: 4px;
       color: #666;
       padding: 6px;
-      width: 50px;
+      width: 40px;
     }
   }
 

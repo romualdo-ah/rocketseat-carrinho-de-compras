@@ -57,14 +57,16 @@ const Cart = (): JSX.Element => {
         <tbody>
           {cartFormatted.map((product) => (
             <tr key={product.id} data-testid="product">
-              <td style={{ flexDirection: "column" }}>
+              <td>
                 <img loading="lazy" src={product.image} alt={product.title} />
+                <div>
+                <strong>{product.title}</strong>
+                <span>{product.priceFormatted}</span>
+                </div>
                 
               </td>
 
               <td>
-                <strong>{product.title}</strong>
-                <span>{product.priceFormatted}</span>
                 <div className="control">
                 <div>
                     <button
@@ -89,14 +91,17 @@ const Cart = (): JSX.Element => {
                       <MdAddCircleOutline size={20} />
                     </button>
                   </div>
+                  <div>
+
                 <strong>{formatPrice(product.price * product.amount)}</strong>
                   <button
                     type="button"
                     data-testid="remove-product"
                     onClick={() => handleRemoveProduct(product.id)}
-                  >
+                    >
                     <MdDelete size={20} />
                   </button>
+                    </div>
                 </div>
 
               </td>

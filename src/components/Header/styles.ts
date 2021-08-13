@@ -8,6 +8,7 @@ export const Container = styled.header`
 
   position: sticky;
   padding: 10px;
+  padding-left:0px;
   top: 0;
   background: #151319;
   z-index: 1;

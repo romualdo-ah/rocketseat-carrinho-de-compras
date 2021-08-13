@@ -3,11 +3,11 @@ Carrinho de compras faz parte do curso Ignite da rocketseat.
 
 Pagina Principal
 
-![Página principal](/public/screencapture-localhost-3000-2021-06-30-15_05_54.png?raw=true)
+![Página principal](/public/home.png?raw=true)
 
 Modificando o Carrinho
 
-![Modificando o carrinho](/public/screencapture-localhost-3000-cart-2021-06-30-15_06_36.png?raw=true)
+![Modificando o carrinho](/public/cart.png?raw=true)
 
 Versão responsive
 

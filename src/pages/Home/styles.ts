@@ -7,6 +7,11 @@ export const ProductList = styled.ul`
   grid-gap: 1.6rem;
   list-style: none;
 
+@keyframes loadAnimation{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
   li {
     display: flex;
     flex-direction: column;
@@ -17,7 +22,9 @@ export const ProductList = styled.ul`
     img {
       align-self: center;
       max-width: 250px;
-      transition:opacity 0.2s linear;
+      width:100%;
+
+      animation: loadAnimation 0.3s linear;
     }
 
     > strong {

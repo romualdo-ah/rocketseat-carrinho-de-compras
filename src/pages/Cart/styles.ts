@@ -3,16 +3,18 @@ import { darken, lighten } from "polished";
 
 export const Container = styled.div`
   padding: 15px;
+  padding-top:40px;
   background: #fff;
   border-radius: 4px;
-
+  min-height: 80vh;
+  
   footer {
     padding: 10px;
-    background:#fff;
+    background: #fff;
     border-radius: 6px;
-
-    position:sticky;
-    bottom:0;
+    box-shadow:0px -4px 13px -10px #000000;
+    position: sticky;
+    bottom: 0;
     margin: 30px auto auto auto;
     display: flex;
     align-items: center;
@@ -33,7 +35,6 @@ export const Container = styled.div`
       padding: 12px 20px;
       font-weight: bold;
       text-transform: uppercase;
-      transition: background 0.2s;
 
       &:hover {
         background: ${darken(0.06, "#7159c1")};
@@ -43,7 +44,7 @@ export const Container = styled.div`
 `;
 
 export const ProductTable = styled.table`
-  width:100%;
+  width: 100%;
   thead th {
     color: #999;
     text-align: left;
@@ -52,9 +53,9 @@ export const ProductTable = styled.table`
     text-align: right;
   }
 
-  tbody tr{
-    padding-bottom:12px;
-    display:flex;
+  tbody tr {
+    padding-bottom: 12px;
+    display: flex;
     flex-direction: column;
   }
   tbody td:first-child {
@@ -62,51 +63,46 @@ export const ProductTable = styled.table`
     display: flex;
   }
 
-  tbody td:first-child div{
-    display:block;
-    flex-direction:column;
-    margin-left:10px;
+  tbody td:first-child div {
+    display: block;
+    flex-direction: column;
+    margin-left: 10px;
   }
 
-
   tbody td {
-    flex-direction:row;
+    flex-direction: row;
     padding: 12px;
     border-bottom: 1px solid #eee;
-    padding-bottom:50px;
-   
-   &:nth-child(2){
-     padding-left:0px;
-   }
+    padding-bottom: 50px;
 
-    span{
-      color:#9c9c9c;
-      padding-top:5px;
+    &:nth-child(2) {
+      padding-left: 0px;
+    }
+
+    span {
+      color: #9c9c9c;
+      padding-top: 5px;
     }
 
     .control {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width:100%;
+      width: 100%;
       padding: 0;
 
-      strong{
-        margin-right:10px;
+      strong {
+        margin-right: 10px;
       }
 
       button {
         padding-top: 10px;
         &:last-child {
-          padding-right:0px;
+          padding-right: 0px;
         }
       }
-
-
     }
   }
-
-  
 
   img {
     max-height: 100px;
@@ -179,4 +175,26 @@ export const Total = styled.div`
     font-size: 28px;
     margin-left: 5px;
   }
+`;
+
+export const EmptyCart = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+min-height:50vh;
+flex-direction: column;
+
+h1{
+  padding-top:50px;
+}
+
+a {
+  text-decoration: none;
+  position: absolute;
+  bottom:4rem;
+  color:#fff;
+  padding: 10px 50px;
+  background-color: #7159c1;
+  border-radius: 6px;
+}
 `;

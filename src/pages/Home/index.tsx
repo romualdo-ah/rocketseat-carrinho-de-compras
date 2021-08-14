@@ -11,10 +11,12 @@ interface Product {
   title: string;
   price: number;
   image: string;
+
 }
 
 interface ProductFormatted extends Product {
   priceFormatted: string;
+  loading:boolean;
 }
 
 interface CartItemsAmount {
@@ -24,7 +26,7 @@ interface CartItemsAmount {
 const Home = (): JSX.Element => {
   const [products, setProducts] = useState<ProductFormatted[]>([]);
   const { addProduct, cart } = useCart();
-  const [loading, setLoading] = useState(true);
+
 
   const cartItemsAmount = cart.reduce((sumAmount, product) => {
     sumAmount[product.id] = product.amount;
@@ -35,17 +37,18 @@ const Home = (): JSX.Element => {
     async function loadProducts() {
       const response = await api.get("products");
       setProducts(response.data);
-      setLoading(false);
     }
 
     loadProducts();
   }, []);
 
   async function handleAddProduct(id: number) {
+    
     await addProduct(id);
   }
 
   return (
+    
     <ProductList>
       {products.map((product) => (
         <li key={product.id} data-testid="product">

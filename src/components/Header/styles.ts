@@ -7,8 +7,8 @@ export const Container = styled.header`
   align-items: center;
 
   position: sticky;
-  padding: 10px;
-  padding-left:0px;
+  padding: 10px 10px 20px 0;
+
   top: 0;
   background: #151319;
   z-index: 1;

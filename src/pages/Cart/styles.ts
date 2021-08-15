@@ -8,16 +8,18 @@ export const Container = styled.div`
   border-radius: 4px;
   min-height: 80vh;
   animation: slideInUp 0.5s ease-out;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   footer {
     padding: 10px;
     background: #fff;
     border-radius: 6px;
     box-shadow:0px -4px 13px -10px #000000;
-    position: sticky;
     bottom: 0;
-    margin: 30px auto auto auto;
     display: flex;
+    position:sticky;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap-reverse;

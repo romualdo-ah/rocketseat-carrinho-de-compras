@@ -37,17 +37,8 @@ const Cart = (): JSX.Element => {
     removeProduct(productId);
   }
 
-  return (
-    <Container>
-      {cart.length === 0 ? (
-        <EmptyCart>
-          <h1>Carrinho vazio...?</h1>          
-          <Link to="/">Voltar</Link>
-        </EmptyCart>
-      ) : (
-        <div>
-
-        
+  return cart.length > 0 ? 
+    <Container>       
         <ProductTable>
           <thead>
             <tr>
@@ -125,10 +116,13 @@ const Cart = (): JSX.Element => {
           <strong>{total}</strong>
         </Total>
       </footer>
-      </div>
-            )}
+    </Container>:
+    <Container>
+    <EmptyCart>
+          <h1>Carrinho vazio...?</h1>          
+          <Link to="/">Voltar</Link>
+        </EmptyCart>
     </Container>
-  );
 };
 
 export default Cart;

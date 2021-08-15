@@ -42,7 +42,7 @@ const Cart = (): JSX.Element => {
       {cart.length === 0 ? (
         <EmptyCart>
           <h1>Carrinho vazio...?</h1>          
-          <Link to="/">Ir ao Home</Link>
+          <Link to="/">Voltar</Link>
         </EmptyCart>
       ) : (
         <div>

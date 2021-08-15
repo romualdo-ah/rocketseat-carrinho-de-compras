@@ -7,7 +7,8 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
   min-height: 80vh;
-  
+  animation: slideInUp 0.5s ease-out;
+
   footer {
     padding: 10px;
     background: #fff;
@@ -41,6 +42,17 @@ export const Container = styled.div`
       }
     }
   }
+
+
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(3%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }}
 `;
 
 export const ProductTable = styled.table`

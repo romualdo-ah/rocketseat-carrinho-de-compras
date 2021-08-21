@@ -7,6 +7,7 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 4px;
   min-height: 80vh;
+  /* height: 100vh; */
   animation: slideInUp 0.5s ease-out;
   display:flex;
   flex-direction: column;
@@ -17,7 +18,7 @@ export const Container = styled.div`
     background: #fff;
     border-radius: 6px;
     box-shadow:0px -4px 13px -10px #000000;
-    bottom: 0;
+    bottom: 6px;
     display: flex;
     position:sticky;
     align-items: center;

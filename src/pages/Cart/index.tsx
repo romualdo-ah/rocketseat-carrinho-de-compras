@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   MdDelete,
   MdAddCircleOutline,
@@ -17,6 +17,10 @@ const Cart = (): JSX.Element => {
   const cartFormatted = cart.map((product) => {
     return { ...product, priceFormatted: formatPrice(product.price) };
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const total = formatPrice(
     cart.reduce((sumTotal, product) => {

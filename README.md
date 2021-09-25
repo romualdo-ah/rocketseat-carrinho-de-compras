@@ -14,7 +14,7 @@ Versão responsive
 ![Responsive](/public/responsive.png?raw=true)
 ## Nesta app
 
-Foi criado um hook customizado que porta um Context para gestão de dados a travez dos diferentes componentes da aplicação.
+Foi criado um hook customizado que porta um Context para gestão dos estados a travez dos diferentes componentes da aplicação.
 
 - ContextAPI.
 - Custom Hook.
